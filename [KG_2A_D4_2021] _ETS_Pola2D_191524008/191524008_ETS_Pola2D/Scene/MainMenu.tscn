@@ -1,0 +1,67 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Atribute/LEMONMILK-Regular.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Atribute/DarkGreen.tres" type="StyleBox" id=2]
+[ext_resource path="res://Atribute/LightPink.tres" type="StyleBox" id=3]
+[ext_resource path="res://Atribute/Background Godot.png" type="Texture" id=4]
+[ext_resource path="res://Atribute/Cream Cake.otf" type="DynamicFontData" id=5]
+[ext_resource path="res://Src/MainMenu.gd" type="Script" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+use_filter = true
+extra_spacing_char = 1
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 12
+use_filter = true
+font_data = ExtResource( 1 )
+
+[node name="Control" type="Control"]
+margin_right = 1024.0
+margin_bottom = 603.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background Godot" type="Sprite" parent="."]
+position = Vector2( 512.189, 300.811 )
+scale = Vector2( 1.02099, 1.01982 )
+texture = ExtResource( 4 )
+
+[node name="Play" type="Button" parent="."]
+margin_left = 387.465
+margin_top = 251.119
+margin_right = 615.465
+margin_bottom = 346.119
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 2 )
+custom_styles/focus = ExtResource( 3 )
+custom_styles/normal = ExtResource( 3 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.152941, 0.341176, 0.364706, 1 )
+custom_colors/font_color_hover = Color( 0.882353, 0.776471, 0.776471, 1 )
+text = "Play"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 410.286
+margin_top = 361.941
+margin_right = 598.286
+margin_bottom = 413.941
+custom_styles/focus = ExtResource( 2 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0.945098, 0.933333, 0.909804, 1 )
+custom_colors/font_color_selected = Color( 0.882353, 0.776471, 0.776471, 1 )
+text = "           Farra Jessica
+               191524008
+  2A-D4 Teknik Informatika"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]

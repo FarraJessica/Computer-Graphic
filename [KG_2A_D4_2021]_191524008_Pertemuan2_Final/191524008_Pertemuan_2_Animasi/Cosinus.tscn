@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Cosinus.gd" type="Script" id=1]
+[ext_resource path="res://Cosinus.png" type="Texture" id=2]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Back" type="Button" parent="."]
+margin_left = 18.0459
+margin_top = 534.441
+margin_right = 71.0459
+margin_bottom = 586.441
+custom_colors/font_color = Color( 0.890196, 0.67451, 0.780392, 1 )
+text = "BACK"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Next" type="Button" parent="."]
+margin_left = 900.395
+margin_top = 529.863
+margin_right = 1009.4
+margin_bottom = 582.863
+custom_colors/font_color = Color( 0.890196, 0.67451, 0.780392, 1 )
+text = "NEXT TO SINUS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cosinus" type="Sprite" parent="."]
+position = Vector2( 130.623, -22.4356 )
+scale = Vector2( 0.600601, 0.789333 )
+texture = ExtResource( 2 )
+[connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]
+[connection signal="pressed" from="Next" to="." method="_on_Next_pressed"]

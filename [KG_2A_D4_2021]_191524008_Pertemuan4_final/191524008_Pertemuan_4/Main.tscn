@@ -1,0 +1,120 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Asdonuts.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://purple.tres" type="StyleBox" id=2]
+[ext_resource path="res://Cream Cake.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://Main.gd" type="Script" id=4]
+[ext_resource path="res://Purple and Pink Desktop Window Nostalgia Funny Quote Zoom Virtual Background.png" type="Texture" id=5]
+[ext_resource path="res://softpink.tres" type="StyleBox" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 45
+outline_color = Color( 1, 0, 0.631373, 1 )
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 45
+outline_color = Color( 0.654902, 0.690196, 0.996078, 1 )
+use_filter = true
+extra_spacing_char = 1
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 45
+outline_color = Color( 0.654902, 0.690196, 0.996078, 1 )
+use_filter = true
+extra_spacing_char = 1
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+outline_color = Color( 0.980392, 0.807843, 0.882353, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+
+[node name="Control" type="Control"]
+margin_right = 1024.0
+margin_bottom = 601.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Purple and Pink Desktop Window Nostalgia Funny Quote Zoom Virtual Background" type="Sprite" parent="."]
+position = Vector2( 511.36, 299.392 )
+scale = Vector2( 0.801126, 0.835009 )
+texture = ExtResource( 5 )
+
+[node name="RandomLine" type="Button" parent="."]
+margin_left = 401.0
+margin_top = 104.0
+margin_right = 725.0
+margin_bottom = 178.0
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 2 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 7 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.654902, 0.690196, 0.996078, 1 )
+custom_colors/font_color_hover = Color( 0.980392, 0.807843, 0.882353, 1 )
+text = "Random Line Generator"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DottedLine" type="Button" parent="."]
+margin_left = 401.0
+margin_top = 253.0
+margin_right = 725.0
+margin_bottom = 325.0
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 2 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 7 )
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.654902, 0.690196, 0.996078, 1 )
+custom_colors/font_color_hover = Color( 0.980392, 0.807843, 0.882353, 1 )
+text = "Dotted Line"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Shapes" type="Button" parent="."]
+margin_left = 402.0
+margin_top = 405.0
+margin_right = 725.0
+margin_bottom = 477.0
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 2 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 7 )
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.654902, 0.690196, 0.996078, 1 )
+custom_colors/font_color_hover = Color( 0.980392, 0.807843, 0.882353, 1 )
+text = "Shapes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_left = 44.0
+margin_top = 68.0
+margin_right = 260.0
+margin_bottom = 271.0
+custom_styles/focus = ExtResource( 2 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/code_folding_color = Color( 0.980392, 0.807843, 0.882353, 1 )
+custom_colors/font_color = Color( 0.980392, 0.807843, 0.882353, 1 )
+text = "	     
+		
+		Farra Jessica
+		   191524008
+ 2A - D4 Teknik Informatika"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="RandomLine" to="." method="_on_RandomLine_pressed"]
+[connection signal="pressed" from="DottedLine" to="." method="_on_DottedLine_pressed"]
+[connection signal="pressed" from="Shapes" to="." method="_on_Shapes_pressed"]

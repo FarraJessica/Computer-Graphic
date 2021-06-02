@@ -1,0 +1,151 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Background.png" type="Texture" id=1]
+[ext_resource path="res://MintGreen.tres" type="StyleBox" id=2]
+[ext_resource path="res://Kathen Font by Situjuh (7NTypes).otf" type="DynamicFontData" id=3]
+[ext_resource path="res://DeepGreen.tres" type="StyleBox" id=4]
+[ext_resource path="res://MainMenu.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 3 )
+
+[node name="Control" type="Control"]
+margin_right = 1400.0
+margin_bottom = 944.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 511.966, 303.653 )
+scale = Vector2( 0.806282, 0.86391 )
+texture = ExtResource( 1 )
+
+[node name="Segitiga" type="Button" parent="."]
+margin_left = 440.526
+margin_top = 48.083
+margin_right = 591.526
+margin_bottom = 99.083
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 2 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.352941, 0.356863, 0.227451, 1 )
+custom_colors/font_color_hover = Color( 0.835294, 0.92549, 0.760784, 1 )
+text = "Triangle"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Belah ketupat" type="Button" parent="."]
+margin_left = 442.905
+margin_top = 150.355
+margin_right = 593.905
+margin_bottom = 201.355
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 2 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.352941, 0.356863, 0.227451, 1 )
+custom_colors/font_color_hover = Color( 0.835294, 0.92549, 0.760784, 1 )
+text = "Rhombus"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Elips" type="Button" parent="."]
+margin_left = 442.905
+margin_top = 247.87
+margin_right = 593.905
+margin_bottom = 298.87
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 2 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.352941, 0.356863, 0.227451, 1 )
+custom_colors/font_color_hover = Color( 0.835294, 0.92549, 0.760784, 1 )
+text = "Ellipse"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bunga 4 Kelopak" type="Button" parent="."]
+margin_left = 446.072
+margin_top = 352.52
+margin_right = 597.072
+margin_bottom = 403.52
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 2 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.352941, 0.356863, 0.227451, 1 )
+custom_colors/font_color_hover = Color( 0.835294, 0.92549, 0.760784, 1 )
+text = "4 Petals Flower"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bunga 8 Kelopak" type="Button" parent="."]
+margin_left = 443.626
+margin_top = 448.846
+margin_right = 594.626
+margin_bottom = 499.846
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 2 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.352941, 0.356863, 0.227451, 1 )
+custom_colors/font_color_hover = Color( 0.835294, 0.92549, 0.760784, 1 )
+text = "8 Petals Flower"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Batik" type="Button" parent="."]
+margin_left = 234.793
+margin_top = 247.87
+margin_right = 385.793
+margin_bottom = 298.87
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 2 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.352941, 0.356863, 0.227451, 1 )
+custom_colors/font_color_hover = Color( 0.835294, 0.92549, 0.760784, 1 )
+text = "Batik"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Family Crest" type="Button" parent="."]
+margin_left = 636.745
+margin_top = 246.681
+margin_right = 787.745
+margin_bottom = 297.681
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 2 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.352941, 0.356863, 0.227451, 1 )
+custom_colors/font_color_hover = Color( 0.835294, 0.92549, 0.760784, 1 )
+text = "Family Crest"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Segitiga" to="." method="_on_Segitiga_pressed"]
+[connection signal="pressed" from="Belah ketupat" to="." method="_on_Belah_ketupat_pressed"]
+[connection signal="pressed" from="Elips" to="." method="_on_Elips_pressed"]
+[connection signal="pressed" from="Bunga 4 Kelopak" to="." method="_on_Bunga_4_Kelopak_pressed"]
+[connection signal="pressed" from="Bunga 8 Kelopak" to="." method="_on_Bunga_8_Kelopak_pressed"]
+[connection signal="pressed" from="Batik" to="." method="_on_Batik_pressed"]
+[connection signal="pressed" from="Family Crest" to="." method="_on_Family_Crest_pressed"]

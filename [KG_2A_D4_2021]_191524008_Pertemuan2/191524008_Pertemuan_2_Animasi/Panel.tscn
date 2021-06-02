@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://MenuAnimasi.gd" type="Script" id=1]
+
+[node name="Panel" type="Panel"]
+anchor_right = 0.064
+anchor_bottom = 0.078
+margin_right = 508.464
+margin_bottom = 237.2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 238.0
+margin_top = 92.0
+margin_right = 353.0
+margin_bottom = 130.0
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 236.0
+margin_top = 25.0
+margin_right = 350.0
+margin_bottom = 62.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 239.0
+margin_top = 159.0
+margin_right = 353.0
+margin_bottom = 198.0
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 239.0
+margin_top = 222.0
+margin_right = 356.0
+margin_bottom = 258.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]
